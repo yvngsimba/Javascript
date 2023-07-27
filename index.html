@@ -8,27 +8,31 @@
 <body>
   <p id="demo"></p>
   <script>
-      // Math 2 
-      //  In the second task, you are provided with two calculations with the results stored in the variables result and result2. 
-      //Ct. You need to take the calculations, multiply them, and format the result to two decimal places.
-      
-      //  Multiply result and result2 and assign the result back to result (use assignment shorthand).
-      //  Format result so that it has two decimal places and store it in a variable called finalResult.
-      //  Check the data type of finalResult using typeof. If it's a string, convert it to a number type and store the result in a variable called finalNumber.
+    // Math 3
+    // In the final task for this article, we want you to write some tests. There are three groups, each consisting of a statement and two variables.
+    // For each one, write a test that proves or disproves the statement made. Store the results of those tests in variables called weightComparison, heightComparison, and pwdMatch, respectively.
 
-      let result = 100 * 3 / 5
-        , result2 = 25 ** 2 / 5;
+    //Statement 1:A pile of bricks weights less than a pile of feathers (lb)
+    const bricks = 1000;
+    const feathers = 1;
 
-        result *= result2;
+    let weightComparison = bricks < feathers;
+      console.log(weightComparison) 
 
-      let finalResult = result.toFixed(2);
+    //Statement 2: A Jaguar Xf is faster than a Audi R8 (mph)
+    const jaguar = 149;
+    const audi = 200;
 
-      let finalNumber;
-      if(typeof finalResult === "string") {
-        finalNumber = parseFloat(finalResult)
-      }
+    let topSpeed = jaguar > audi;
+    console.log(topSpeed)
 
-      console.log(finalNumber)
+    //Statement 3: The 2 variables share the same pattern
+    const firstPattern = "XoXo";
+    const secondPattern = "XoXo";
+
+    let same = firstPattern === secondPattern
+    console.log(same)
+
   </script>
 </body>
 </html>
