@@ -8,15 +8,23 @@
 <body>
 <p id="demo"></p>
   <script>
-    let currentUser = prompt('Login:')
+    let currentUser = prompt('Login:');
     
     if (currentUser === 'Admin') {
-     let password = prompt('Password:')
-       if (password === null || password === ''){
-        let denied = alert('Canceled')
+      let password = prompt('Password:');
+
+      if (password === 'ayo') {
+        alert('Welcome');
+      } else if (password === null || password === '') {
+        alert('Canceled');
+       } else {
+        alert('Wrong Pass')
        }
-    }
-    else alert('I don\'t know you.');{
+   
+      } else if (currentUser === null || currentUser === '') {
+        alert('Canceled'); 
+      } else {
+      alert('I don\'t know you.');
     }
   </script>
 </body>
