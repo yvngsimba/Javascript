@@ -6,12 +6,18 @@
   <title>JavaScript</title>
 </head>
 <body>
+<p id="demo"></p>
   <script>
-    let text = "a,b,c,d,e,f";
-    const myArray = text.split(",");
-    console.log(myArray)
-    console.log(text)
-
+    let currentUser = prompt('Login:')
+    
+    if (currentUser === 'Admin') {
+     let password = prompt('Password:')
+       if (password === null || password === ''){
+        let denied = alert('Canceled')
+       }
+    }
+    else alert('I don\'t know you.');{
+    }
   </script>
 </body>
 </html>
