@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content=" using the ig shorcut"/>
+  <meta name="description" content=" using the ig shortcut"/>
   <title>???</title>
 </head>
 <body>
 
   <script>
-    let result = (a = b < 4) ? 'Below' : 'Over'
+    let login = prompt('Enter your job hierarchy', 'Employee, D')
+
+    let message = (login == 'Employee') ? 'Hello' : 
+    (login == 'Director') ? 'Greetings' : 
+    (login == '') ? 'No login' :
+    '';
+
   </script>
   
 </body>
